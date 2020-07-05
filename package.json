@@ -1,5 +1,13 @@
 {
+  "main": "server/index.js",
   "scripts": {
-    "start": "cd react-residents-test && npm start"
+    "build": "cd react-residents-test && npm run build",
+    "install-client": "cd react-residents-test && npm install",
+    "heroku-postbuild": "npm run install-react-residents-test && npm run build",
+    "start": "cd server && node index.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^2.0.4"
   }
 }
