@@ -1,9 +1,4 @@
 {
-  "buildpacks": [
-    {
-      "url": "mars/create-react-app"
-    }
-  ],
   "scripts": {
     "start": "cd react-residents-test && npm start"
   }
