@@ -2,10 +2,12 @@
 
 ### React Deployment Steps
 Without the Buildpack
-<hr>
-1. create `package.json` file at the project root
 
-2. Create a server directory
+<hr>
+
+1.Create `package.json` file at the project root
+
+2.Create a server directory
 
 ```
 repository
@@ -14,7 +16,7 @@ repository
 	| - new package.json file
 ```
 
-3. In the server directory create  an `index.js` file
+3.In the server directory create  an `index.js` file
 
 4.In the root package.json add the json below
 
@@ -38,9 +40,9 @@ repository
 }
 ```
 
-5. Run npm install at the project root
+5.Run npm install at the project root
 
-6. In the server entry point file add the code below
+6.In the server entry point file add the code below
 
 ```
 // import express
@@ -60,25 +62,25 @@ app.listen(port, () => {
 });
 ```
 
-7. In the react client directory run `npm run build` to generate the build subdirectory. 
+7.In the react client directory run `npm run build` to generate the build subdirectory. 
 
-8. Add the proxy property to your react client package.json
+8.Add the proxy property to your react client package.json
 
-9. Run the code below in the terminal in the project root
+9.Run the code below in the terminal in the project root
 
 ```
 heroku create your-app-name
 ```
 
-10. Add and commit your changes
+10.Add and commit your changes
 
-11. Run `heroku local` to view your heroku app locally before pushing to heroku. 
+11.Run `heroku local` to view your heroku app locally before pushing to heroku. 
 
-12 run `git push heroku master` to push changes to heroku
+12Run `git push heroku master` to push changes to heroku
 
-13. run `heroku open` to view your deployed project in the browser!
+13.Run `heroku open` to view your deployed project in the browser!
 
-14. run `git push` to push changes to your git repo as well
+14.Run `git push` to push changes to your git repo as well
 
 ### Example Deployed App
 Simple React App
